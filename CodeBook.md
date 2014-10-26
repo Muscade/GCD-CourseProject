@@ -18,10 +18,15 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 #Data transformation
 
 The initial dataset was transformed using the following steps (script run_analysis.R reproduces this transformations):
+
 * The training and the test sets was merged into one data set.
+
 * Only the measurements on the mean and standard deviation for each measurement was extracted. 
+
 * Descriptive activity names was added to the activities in the data set.
+
 * Descriptive variable names was added. 
+
 * Average of each variable for each activity and each subject was calculated.
 
 #Data columns
@@ -36,32 +41,55 @@ These signals were used to estimate variables of the feature vector for each pat
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
 tBodyAcc-XYZ
+
 tGravityAcc-XYZ
+
 tBodyAccJerk-XYZ
+
 tBodyGyro-XYZ
+
 tBodyGyroJerk-XYZ
+
 tBodyAccMag
+
 tGravityAccMag
+
 tBodyAccJerkMag
+
 tBodyGyroMag
+
 tBodyGyroJerkMag
+
 fBodyAcc-XYZ
+
 fBodyAccJerk-XYZ
+
 fBodyGyro-XYZ
+
 fBodyAccMag
+
 fBodyAccJerkMag
+
 fBodyGyroMag
+
 fBodyGyroJerkMag
 
 The set of variables that were estimated from these signals for each subject and activity are: 
 
 mean: Mean value
+
 std: Standard deviation
 
 Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
 
 gravityMean
+
 tBodyAccMean
+
 tBodyAccJerkMean
+
 tBodyGyroMean
+
 tBodyGyroJerkMean
+
+Activities are listed in the column *activity*. Subject codes are listed in the column *subject_id*.
